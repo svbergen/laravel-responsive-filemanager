@@ -1212,7 +1212,7 @@ $get_params = http_build_query($get_params);
                             } else {
                                 $creation_thumb_path = $mini_src = $src_thumb = $thumbs_path . $file;
 
-                                if (!file_exists($src_thumb)) {
+                                if (!file_exists(public_path($src_thumb))) {
                                     try {
                                         if (!RFM::createImg($ftp, public_path($file_path), public_path($creation_thumb_path), 122, 91, 'crop', $config)) {
                                             $src_thumb = $mini_src = "";
