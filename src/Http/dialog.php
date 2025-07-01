@@ -103,13 +103,13 @@ if ($rfm_subfolder != "" && $rfm_subfolder[strlen($rfm_subfolder) - 1] != "/") {
 $ftp = RFM::ftpCon($config);
 
 if (($ftp && !$ftp->isDir($config['ftp_base_folder'] . $config['upload_dir'] . $rfm_subfolder)) ||
-    (!$ftp && !file_exists($config['current_path'] . $rfm_subfolder))
+    (!$ftp && !file_exists(public_path($config['current_path'] . $rfm_subfolder)))
 ) {
     $rfm_subfolder = "";
 }
 
 if (($ftp && !$ftp->isDir($config['ftp_base_folder'] . $config['upload_dir'] . $rfm_subfolder . $subdir)) ||
-    (!$ftp && !file_exists($config['current_path'] . $rfm_subfolder . $subdir))
+    (!$ftp && !file_exists(public_path($config['current_path'] . $rfm_subfolder . $subdir)))
 ) {
     $subdir = '';
 }
