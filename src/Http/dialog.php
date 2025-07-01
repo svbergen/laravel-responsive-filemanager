@@ -897,7 +897,7 @@ $get_params = http_build_query($get_params);
                 <div class="nav-collapse collapse">
                     <div class="filters">
                         <div class="row-fluid">
-                            <div class="span4 half">
+<!--                             <div class="span4 half">
                                 <?php if ($config['upload_files']) { ?>
                                     <button class="tip btn upload-btn" title="<?php echo __('Upload_file'); ?>"><i class="rficon-upload"></i></button>
                                 <?php } ?>
@@ -923,7 +923,7 @@ $get_params = http_build_query($get_params);
                                         <?php } ?>
                                     <?php } ?>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="span2 half view-controller">
                                 <button class="btn tip<?php echo ($view == 0) ? " btn-inverse" : "" ?>" id="view0" data-value="0" title="<?php echo __('View_boxes'); ?>"><i class="icon-th <?php echo ($view == 0) ? "icon-white" : ""; ?>"></i></button>
                                 <button class="btn tip<?php echo ($view == 1) ? " btn-inverse" : ""; ?>" id="view1" data-value="1" title="<?php echo __('View_list'); ?>"><i class="icon-align-justify <?php echo ($view == 1) ? "icon-white" : ""; ?>"></i></button>
