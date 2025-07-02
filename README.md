@@ -1,4 +1,4 @@
-# Laravel-Responsive-FileManager
+# Sjoerd Laravel-Responsive-FileManager
 
 [![Downloads](https://img.shields.io/packagist/dt/zanysoft/laravel-responsive-filemanager.svg?style=flat-square)](https://packagist.org/packages/zanysoft/laravel-responsive-filemanager)
 [![GitHub license](https://img.shields.io/badge/License-MIT-informational.svg)](https://github.com/zanysoft/laravel-responsive-filemanager/blob/master/LICENSE)
