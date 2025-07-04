@@ -6,7 +6,8 @@ $FM_ROUTES = [
     'execute.php' => ['post'],
     'force_download.php' => ['post'],
     'fview.php' => ['get'],
-    'upload.php' => ['get', 'post']];
+    //'upload.php' => ['get', 'post']
+    ];
 
 require_once __DIR__ . '/boot.php';
 
