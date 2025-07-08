@@ -16,6 +16,12 @@ $time = time();
 
 $vendor_path = parse_url(asset('vendor/responsivefilemanager') . '/')['path'];
 
+if (!defined('FM_USE_ACCESS_KEYS')) {
+    define('FM_USE_ACCESS_KEYS', false); // TRUE or FALSE
+}
+if (!defined('FM_DEBUG_ERROR_MESSAGE')) {
+    define('FM_DEBUG_ERROR_MESSAGE', false); // TRUE or FALSE
+}
 
 if (FM_USE_ACCESS_KEYS == true) {
     if (!isset($_GET['akey'], $config['access_keys']) || empty($config['access_keys'])) {
